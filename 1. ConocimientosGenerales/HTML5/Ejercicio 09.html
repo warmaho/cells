@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<table id="myTable" data-numero-anos="5" data-numero-productos-mostrados="10" data-nombre-productos="Producto1, Producto2, Producto3" data-titulo-tabla="Mi tabla">
+  <tr>
+    <th>Nombre</th>
+    <th>Precio</th>
+  </tr>
+  <tr>
+    <td>Producto1</td>
+    <td>$10</td>
+  </tr>
+  <tr>
+    <td>Producto2</td>
+    <td>$20</td>
+  </tr>
+  <tr>
+    <td>Producto3</td>
+    <td>$30</td>
+  </tr>
+</table>
+
+<script>
+var table = document.getElementById("myTable");
+
+console.log("Número de años: " + table.dataset.numeroAnos);
+console.log("Número de productos mostrados: " + table.dataset.numeroProductosMostrados);
+console.log("Nombre de los productos: " + table.dataset.nombreProductos);
+console.log("Título de la tabla: " + table.dataset.tituloTabla);
+</script>
+
+</body>
+</html>

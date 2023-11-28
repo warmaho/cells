@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/action_page.php">
+  <label for="edad1">Edad (sin restricciones):</label><br>
+  <input type="number" id="edad1" name="edad1"><br><br>
+
+  <label for="edad2">Edad (entre 18 y 99 años, tipo input):</label><br>
+  <input type="text" id="edad2" name="edad2" pattern="[1-9][89]|[2-9][0-9]"><br><br>
+
+  <label for="edad3">Edad (entre 18 y 99 años, tipo number):</label><br>
+  <input type="number" id="edad3" name="edad3" min="18" max="99"><br><br>
+
+  <input type="submit" value="Enviar">
+</form> 
+
+<dialog id="myDialog">
+  <p>Por favor, introduce una edad válida.</p>
+  <button onclick="myFunction()">Cerrar</button>
+</dialog>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(event) {
+  var edad1 = document.getElementById("edad1").value;
+  var edad2 = document.getElementById("edad2").value;
+  var edad3 = document.getElementById("edad3").value;
+
+  if (edad1 < 0 || edad2 < 18 || edad2 > 99 || edad3 < 18 || edad3 > 99) {
+    event.preventDefault();
+    document.getElementById("myDialog").showModal();
+  }
+});
+
+function myFunction() {
+  document.getElementById("myDialog").close();
+}
+</script>
+
+</body>
+</html>
