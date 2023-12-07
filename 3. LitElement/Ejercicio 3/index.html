@@ -1,0 +1,70 @@
+<!-- Aplicación de Web Components con JavaScript -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Web Page</title>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header>
+		<div class="contenedor_16">
+			<hgroup>
+				<h1 class="nombre" style="text-align: center;">View: SamplePage</h1>
+			</hgroup>
+		</div>
+	</header>
+	<section>
+		<fieldset>
+			<form class="formulario">
+				<label>Filter: </label>
+				<input type="search" name="search" id="search" class="texto">
+				<input type="button" name="btn" id="btn" class="boton" value="Search" onclick="buscar()">
+				<input type="reset" name="btn" id="btn" class="boton" value="Clear" onclick="eliminar()">
+				<br><br>
+				<template>
+					<h1>Last Month New Customers</h1>
+				</template>
+				<mi-titulo></mi-titulo>
+				<table id="datos">
+					<tr>
+						<th>Name</th>
+						<th>Last Name</th>
+						<th>Age</th>
+					</tr>
+					<tr>
+						<td>Pedro</td>
+						<td>Peréz Juárez</td>
+						<td>26</td>
+					</tr>
+					<tr>
+						<td>José Luis</td>
+						<td>Vázquez Hernández</td>
+						<td>57</td>
+					</tr>
+					<tr>
+						<td>Demetrio</td>
+						<td>Astorga Flores</td>
+						<td>36</td>
+					</tr>
+					<tr>
+						<td>María</td>
+						<td>Gómez Nieto</td>
+						<td>32</td>
+					</tr>
+					<tr>
+						<td>Jaime</td>
+						<td>Balderas Ruiz</td>
+						<td>45</td>
+					</tr>
+				</table>
+				<br>
+				<input type="reset" name="btn" id="btn" class="boton" value="Cancel" style="float:right;">
+				<input type="submit" name="btn" id="btn" class="boton" value="OK" style="float:right;">
+			</form>
+		</fieldset>
+	</section>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!-- Aplicación de Web Components con JavaScript -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor_16">
+            <hgroup>
+                <h1 class="nombre" style="text-align: center;">View: SamplePage</h1>
+            </hgroup>
+        </div>
+    </header>
+    <section>
+        <form>
+            <label>Filter:</label>
+            <select name="search" id="search">
+                <option></option>
+                <option>Tiger Nixon</option>
+                <option>Garrett Winters</option>
+                <option>Ashton Cox</option>
+                <option>Cedric Kelly</option>
+                <option>Airi Satou</option>
+                <option>Brielle Williamson</option>
+                <option>Herrod Chandler</option>
+                <option>Rhona Davidson</option>
+                <option>Colleen Hurst</option>
+                <option>Sonya Frost</option>
+                <option>Jena Gaines</option>
+                <option>Quinn Flynn</option>
+                <option>Charde Marshall</option>
+                <option>Haley Kennedy</option>
+                <option>Tatyana Fitzpatrick</option>
+                <option>Michael Silva</option>
+                <option>Paul Byrd</option>
+                <option>Gloria Little</option>
+                <option>Bradley Greer</option>
+                <option>Dai Rios</option>
+                <option>Jenette Caldwell</option>
+                <option>Yuri Berry</option>
+                <option>Caesar Vance</option>
+                <option>Doris Wilder</option>             
+            </select>
+            <input type="button" name="btn" id="btn" class="boton" value="Search" onclick="consultar()">
+            <input type="reset" name="id" id="id" class="boton" value="Clear" onclick="limpiar()">
+            <br><br>
+            <template>
+                <h1>Last Month New Customers</h1>
+            </template>
+            <mi-titulo></mi-titulo>
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Employee name</th>
+                        <th>Employee salary</th>
+                        <th>Employee age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </form>
+    </section>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

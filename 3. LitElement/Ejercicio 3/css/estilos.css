@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+body {
+  margin: 0px;
+}
+
+.contenedor_16 {
+  max-width: 860px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.boton {
+  bottom: 10px;
+  right: 20px;
+  background-color: #FFFFFF;
+  color: black;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.formulario {
+  float: left;
+}
+
+.texto {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+header {
+  background: #146092;
+  border-bottom: 1px solid #848484;
+  padding: 19px 0;
+  overflow: hidden;
+}
+
+header hgroup {
+  float: left;
+  text-align: left;
+}
+
+header hgroup h1 {
+  color: #FFFFFF;
+  font: 400 40px oswald, sans-serif;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+label {
+  font-size: 20px;
+  text-indent: 30pt;
+  line-height: 20pt;
+}
+
+
+section {
+  text-align: center;
+}
+
+
+table {
+  width: 225%;
+  border: 1px solid #000;
+
+}
+
+th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+  border-spacing: 0;
+  text-align: center;
+}
